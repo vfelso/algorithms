@@ -1,8 +1,7 @@
 import random
 
 class Graph(object):
-    def __init__(self):
-        file = '/Users/vanessafelso/Documents/6.00x Files/Algorithm 3/kargerMinCut.txt'
+    def __init__(self,file):
         self.edges=[]
         self.vertices={}
         self.nodes=[str(x) for x in range(1,201)]
@@ -58,10 +57,4 @@ class Graph(object):
             self.contract(u,v)
         return len(self.edges)
   
-num=200                    
-while num>0:
-    graph=Graph()
-    print graph.random_contraction()
-    num-=1
-
 #17
