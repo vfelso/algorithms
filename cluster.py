@@ -42,8 +42,7 @@ class union_find():
         self.k -= 1
 
 class Graph(object):
-    def __init__(self):
-        file = '/Users/vanessafelso/Documents/6.00x Files/Algorithm pt 2 2/clustering1.txt'
+    def __init__(self,file):
         self.G=[[]]*500
         self.edges=[]
         bool=True

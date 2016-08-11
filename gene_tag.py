@@ -1,8 +1,8 @@
 import csv
 import math
 
-def load_text(fileName):
-    file = '/Users/vanessafelso/Documents/6.00x Files/NLP 1/' + str(fileName)
+def load_text(fileName,directory):
+    file = str(directory) + str(fileName)
     return file         
 def vocab_count(input):
     count = 0

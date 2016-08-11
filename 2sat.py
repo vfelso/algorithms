@@ -1,7 +1,4 @@
-def load_file():
-    #1:100000,2:200000,3:400000,4:600000,5:800000,6:1000000
-    file = '/Users/vanessafelso/Documents/6.00x Files/Algorithm pt 2 6/2sat2.txt'
-    #file = '/Users/vanessafelso/Documents/6.00x Files/Algorithm pt 2 6/test.txt'
+def load_file(file):
     bool=False
     G={}
     GRev={}

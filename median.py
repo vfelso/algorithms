@@ -1,8 +1,6 @@
 from heapq import *
 
-def load_ints():
-    file = '/Users/vanessafelso/Documents/6.00x Files/Algorithm 6/Median.txt'
-    #file = '/Users/vanessafelso/Documents/6.00x Files/Algorithm 6/test.txt'
+def load_ints(file):
     ints = []
     with open(file,'r') as f:
                 for line in f:

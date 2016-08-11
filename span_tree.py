@@ -9,8 +9,7 @@ class Graph(object):
         self.nodes[i].append((j,w))
         self.nodes[j].append((i,w))
     
-def load_graph():
-    file = '/Users/vanessafelso/Documents/6.00x Files/Algorithm pt 2 1/edges.txt'
+def load_graph(file):
     number=0
     bool=True
     with open(file,'r') as data:

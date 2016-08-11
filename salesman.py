@@ -15,8 +15,7 @@ def nodes(num,n):
     return list
                 
 class Graph(object):
-    def __init__(self):
-        file = '/Users/vanessafelso/Documents/6.00x Files/Algorithm pt 2 5/tsp.txt'
+    def __init__(self,file):
         self.coordinates={}
         self.cost={}
         bool=True

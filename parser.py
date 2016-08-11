@@ -3,8 +3,8 @@ import csv
 import math
 import json
 
-def load_text(fileName):
-    file = '/Users/vanessafelso/Documents/6.00x Files/NLP 2/' + str(fileName)
+def load_text(fileName,directory):
+    file = str(directory) + str(fileName)
     return file         
 #First let's create our model with storage for nonterminal counts, binary rules and counts, unary rules and counts, and words
 class PCFG(object):
@@ -105,8 +105,8 @@ def backtrace(back,bp):
     
 def replace_rare_words(sentence,pcfg):
     return [word if not pcfg.is_rare_word(word) else "_RARE_" for word in sentence]
-def parse_text(fileName,pcfg):
-    file = '/Users/vanessafelso/Documents/6.00x Files/NLP 2/' + str(fileName)
+def parse_text(fileName,pcfg,directory):
+    file = str(directory) + str(fileName)
     final = []
     for i,l in enumerate(open(file)):
         line = l.strip().split()
@@ -118,8 +118,7 @@ def parse_text(fileName,pcfg):
     #        print>>parsed, x
 
 #create a new file of training trees with _RARE_ replacing rare words
-def replace_trees(pcfg):
-    file = '/Users/vanessafelso/Documents/6.00x Files/NLP 2/parse_train.dat'
+def replace_trees(pcfg,file):
     final = []
     with open(file,'r') as train:
         for line in train:

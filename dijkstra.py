@@ -1,8 +1,7 @@
 from heapq import *
 
 class Graph(object):
-    def __init__(self):
-        file='/Users/vanessafelso/Documents/6.00x Files/Algorithm 5/dijkstraData.txt'
+    def __init__(self,file):
         self.G=[];self.weights={},
         for x in range(1,202):
             self.G.append([])

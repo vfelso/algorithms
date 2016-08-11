@@ -3,11 +3,10 @@ import sys
 sys.setrecursionlimit(150000)
 
 class Knapsack(object):
-    def __init__(self):
+    def __init__(self,file):
         self.values=[0]
         self.weights=[0]
         self.A={}
-        file = '/Users/vanessafelso/Documents/6.00x Files/Algorithm pt 2 3/knapsack_big.txt'
         b=True
         with open(file,'r') as sack:
             for line in sack:

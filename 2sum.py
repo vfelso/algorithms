@@ -1,6 +1,4 @@
-def load_a():
-    file = '/Users/vanessafelso/Documents/6.00x Files/Algorithm 6/algo1-programming_prob-2sum.txt'
-    #file = '/Users/vanessafelso/Documents/6.00x Files/Algorithm 6/test.txt'
+def load_a(file):
     ints,seen = [],set()
     with open(file,'r') as f:
                 for line in f:

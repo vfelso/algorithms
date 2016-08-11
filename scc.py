@@ -1,6 +1,5 @@
 class Graph(object):
-    def __init__(self):
-        file = '/Users/vanessafelso/Documents/6.00x Files/Algorithm 4/SCC.txt'
+    def __init__(self,file):
         self.G=[]
         self.GFinish=[]
         self.GRev=[]

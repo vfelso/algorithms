@@ -1,5 +1,4 @@
-def load_array():
-    file = '/Users/vanessafelso/Documents/6.00x Files/Algorithm 2/QuickSort.txt'
+def load_array(file):
     array = []
     with open(file,'r') as ints:
                 for line in ints:

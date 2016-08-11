@@ -1,8 +1,7 @@
 import heapq
 import operator
 
-def load_jobs(function):
-    file = '/Users/vanessafelso/Documents/6.00x Files/Algorithm pt 2 1/jobs.txt'
+def load_jobs(function,file):
     jobs = {}
     heap = []
     i=1
